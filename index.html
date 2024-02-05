@@ -8,6 +8,9 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -23,7 +26,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        <div class="toggle-btn" id="desktopDarkbtn">
+            <span id="btntext">Dark</span>
+            <i class="fas fa-moon" id="btnicon"></i>
+        </div>
     </nav>
+
     <nav id="hamburger-nav">
         <div class="logo">
             <a href="#">CHETRA-LOGO</a>
@@ -39,6 +47,10 @@
                 <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <div class="toggle-btn" id="mobileDarkbtn">
+                    <span id="btntext-b">Dark</span>
+                    <i class="fas fa-moon" id="btnicon-b"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -85,7 +97,8 @@
                     <div class="details-container">
                         <img src="./assets/education.png" alt="Education icon" class="icon" />
                         <h3>Education</h3>
-                        <p>Senior in MIS at SETEC Institute / 2020 - Present<br />Graduated High School / 2016</p>
+                        <p>Bachelor of Science in MIS at SETEC Institute Senior / 2020 - Present
+                            <br><br />Graduated High School / 2016</p>
                     </div>
                 </div>
                 <div class="text-container">
@@ -227,7 +240,7 @@
                 <p><a href="chetra.ou111@gmail.com">Email</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="LinkedIn icon" class="icon contact-icon email-icon" />
+                <img src="./assets/email.png" alt="Telegram icon" class="icon contact-icon email-icon" />
                 <p><a href="https://t.me/ch3tra">Telegram</a></p>
             </div>
         </div>
@@ -244,9 +257,8 @@
                 </ul>
             </div>
         </nav>
-        
-    </footer>
 
+    </footer>
 
     <script src="script.js"></script>
 </body>
