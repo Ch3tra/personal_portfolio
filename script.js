@@ -46,3 +46,17 @@ mobileDarkbtn.onclick = function () {
 
 // Call updateToggleUI to set state to btn to synchronized between the desktop and mobile views
 updateToggleUI();
+
+
+
+ScrollReveal({
+    distance: '50px',
+    duration: 1500,
+    delay: 200,
+    reset: true,
+})
+
+ScrollReveal().reveal('.section__pic-container', { origin: 'top' });
+ScrollReveal().reveal('.section__text, .section-container, .contact-info-upper-container', { origin: 'bottom' });
+ScrollReveal().reveal('#content_1', { origin: 'left' });
+ScrollReveal().reveal('#content_2, #project_container', { origin: 'right' });
