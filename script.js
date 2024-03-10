@@ -5,20 +5,23 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-let isDarkMode = false;
+//save mode in brawser local
+let isDarkMode = localStorage.getItem("isDarkMode") === "true";
 
 function toggleDarkMode() {
-    document.body.classList.toggle("dark-screen");
     isDarkMode = !isDarkMode;
+    localStorage.setItem("isDarkMode", isDarkMode);
 }
 
 function updateToggleUI() {
     if (isDarkMode) {
+        document.body.classList.add("dark-screen");
         btntext.innerHTML = "Light";
         btnicon.className = "fas fa-sun";
         btntext_b.innerHTML = "Light";
         btnicon_b.className = "fas fa-sun";
     } else {
+        document.body.classList.remove("dark-screen");
         btntext.innerHTML = "Dark";
         btnicon.className = "fas fa-moon";
         btntext_b.innerHTML = "Dark";
