@@ -1,1 +1,1 @@
-https://ch3tra.github.io/personal_portfolio/index.html
+* DEMO: https://ch3tra-portfolios.vercel.app/
